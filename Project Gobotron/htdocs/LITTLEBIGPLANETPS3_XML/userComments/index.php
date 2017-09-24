@@ -49,7 +49,7 @@ for ($x = 0; $x <= $commentCount; $x++) {
   echo '    <id>'.$index_id[$x]."</id>\r\n";
   echo '    <npHandle>'.$npHandle[$x]."</npHandle>\r\n";
   echo '    <timestamp>'.$timestamp[$x]."</timestamp>\r\n";
-  if(!$deleted[$x]){
+  if($deleted[$x]=='false'){
     echo '    <message>'.$message[$x]."</message>\r\n";
   }else{
     echo '    <deleted>'.$deleted[$x]."</deleted>\r\n";
