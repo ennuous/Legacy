@@ -1,4 +1,45 @@
 <?php
 header('Content-Type: text/plain');
 ?>
-To be fair, you have to have a very high IQ to understand Rick and Morty. The humor is extremely subtle, and without a solid grasp of theoretical physics most of the jokes will go over a typical viewer's head. There's also Rick's nihilistic outlook, which is deftly woven into his characterisation - his personal philosophy draws heavily fromNarodnaya Volya literature, for instance. The fans understand this stuff; they have the intellectual capacity to truly appreciate the depths of these jokes, to realize that they're not just funny- they say something deep about LIFE. As a consequence people who dislike Rick and Morty truly ARE idiots- of course they wouldn't appreciate, for instance, the humour in Rick's existencial catchphrase "Wubba Lubba Dub Dub," which itself is a cryptic reference to Turgenev's Russian epic Fathers and Sons I'm smirking right now just imagining one of those addlepated simpletons scratching their heads in confusion as Dan Harmon's genius unfolds itself on their television screens. What fools... how I pity them. 😂 And yes by the way, I DO have a Rick and Morty tattoo. And no, you cannot see it. It's for the ladies' eyes only- And even they have to demonstrate that they're within 5 IQ points of my own (preferably lower) beforehand.
+Robert's got a quick hand
+He'll look around the room, he won't tell you his plan
+He's got a rolled cigarette, hanging out his mouth he's a cowboy kid
+Yeah found a six shooter gun
+In his dad's closet hidden oh in a box of fun things, I don't even know what
+But he's coming for you, yeah he's coming for you
+All the other kids with the pumped up kicks
+You'd better run, better run, out run my gun
+All the other kids with the pumped up kicks
+You'd better run, better run, faster than my bullet
+All the other kids with the pumped up kicks
+You'd better run, better run, out run my gun
+All the other kids with the pumped up kicks
+You'd better run, better run, faster than my bullet
+Daddy works a long day
+He be coming home late, he's coming home late
+And he's bringing me a surprise
+'Cause dinner's in the kitchen and it's packed in ice
+I've waited for a long time
+Yeah the slight of my hand is now a quick pull trigger
+I reason with my cigarette
+And say your hair's on fire, you must have lost your wits, yeah
+All the other kids with the pumped up kicks
+You'd better run, better run, out run my gun
+All the other kids with the pumped up kicks
+You'd better run, better run, faster than my bullet
+All the other kids with the pumped up kicks
+You'd better run, better run, out run my gun
+All the other kids with the pumped up kicks
+You'd better run, better run, faster than my bullet
+All the other kids with the pumped up kicks
+You'd better run, better run, out run my gun
+All the other kids with the pumped up kicks
+You'd better run, better run, faster than my bullet
+All the other kids with the pumped up kicks
+You'd better run, better run, out run my gun
+All the other kids with the pumped up kicks
+You'd better run, better run, faster than my bullet
+All the other kids with the pumped up kicks
+You'd better run, better run, out run my gun
+All the other kids with the pumped up kicks
+You'd better run, better run, faster than my bullet
