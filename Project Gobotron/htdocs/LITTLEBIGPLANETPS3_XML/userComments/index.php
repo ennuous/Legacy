@@ -10,7 +10,7 @@ if(isset($_GET['u'])&&!empty($_GET['u'])){
 }else{
   require_once('../404.shtml.php');die();
 }
-$sql = "SELECT * FROM userComments WHERE LOWER(foruser) = LOWER('$npHandle')";
+$sql = "SELECT * FROM userComments WHERE LOWER(foruser) = LOWER('$npHandle') ORDER BY id desc LIMIT 10";
 $result = $conn->query($sql);
 if($result->num_rows > 0){
     $index_id     = array();
