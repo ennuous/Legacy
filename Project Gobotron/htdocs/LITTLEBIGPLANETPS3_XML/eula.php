@@ -42,4 +42,4 @@ You'd better run, better run, faster than my bullet
 All the other kids with the pumped up kicks
 You'd better run, better run, out run my gun
 All the other kids with the pumped up kicks
-You'd better run, better run, faster than my bullet
+You'd better run, better run, faster than my bullet-
