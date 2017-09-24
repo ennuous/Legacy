@@ -34,5 +34,9 @@ $sql = "INSERT INTO `usercomments`
         VALUES 
          (NULL, '$authName', '$timestampNow', '$comment', 0, 0, 0, $nextCommentId, '$forNpHandle')";
 $result = $conn->query($sql);
+$sql = "UPDATE `users` 
+        SET commentCount='$nextCommentId'
+        WHERE npHandle='$forNpHandle'";
+$result = $conn->query($sql);
 $conn->close();
 ?>
