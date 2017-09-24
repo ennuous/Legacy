@@ -54,7 +54,7 @@ for ($x = 0; $x <= $commentCount; $x++) {
   }else{
     echo '    <deleted>'.$deleted[$x]."</deleted>\r\n";
     echo '    <deletedBy>'.$deletedBy[$x]."</deletedBy>\r\n";
-    echo '    <deletedType>'.$deletedType[$x]."</deletedType>\r\n";
+    echo '    <deleteType>'.$deletedType[$x]."</deleteType>\r\n";
   }
   echo '    <thumbsup>'.$thumbsup[$x]."</thumbsup>\r\n";
   echo '    <thumbsdown>'.$thumbsdown[$x]."</thumbsdown>\r\n";
