@@ -30,13 +30,13 @@ if(empty($comment)||$comment==''){
 $comment      = htmlentities($comment, ENT_QUOTES);
 $timestampNow = round(microtime(true) * 1000);
 $sql = "INSERT INTO `usercomments` 
-         (`id`, `npHandle`, `timestamp`, `message`, `thumbsup`, `thumbsdown`, `yourthumb`, `index_id`, `foruser`)
+         (`id`, `npHandle`, `timestamp`, `message`, `thumbsup`, `thumbsdown`, `yourthumb`, `deleted`, `deletedBy`, `deletedType`, `index_id`, `foruser`)
         VALUES 
-         (NULL, '$authName', '$timestampNow', '$comment', 0, 0, 0, $nextCommentId, '$forNpHandle')";
-$result = $conn->query($sql);
+         (NULL, '$authName', '$timestampNow', '$comment', 0, 0, 0, 'false', '', '', $nextCommentId, '$forNpHandle')";
+$conn->query($sql);
 $sql = "UPDATE `users` 
         SET commentCount='$nextCommentId'
         WHERE npHandle='$forNpHandle'";
-$result = $conn->query($sql);
+$conn->query($sql);
 $conn->close();
 ?>

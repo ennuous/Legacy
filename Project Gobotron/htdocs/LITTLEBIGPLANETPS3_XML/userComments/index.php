@@ -34,6 +34,7 @@ if($result->num_rows > 0){
   }else{
   require_once('../404.shtml.php');die();
 }
+$conn->close();
 ?>
 <comments>
 <?php
