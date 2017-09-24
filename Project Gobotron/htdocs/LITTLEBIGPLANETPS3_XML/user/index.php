@@ -18,6 +18,7 @@ if($result->num_rows > 0){
       $profileBiography  = $row['biography'];
       $profileHeartCount = $row['heartCount'];
 	  $profileFavouriteUserCount = $row['favouriteUserCount'];
+	  $profileCommentCount = $row['commentCount'];
     }
   }else{
   require_once('../404.shtml.php');die();
@@ -49,7 +50,7 @@ if($result->num_rows > 0){
   <boo2/>
   <biography><?php echo($profileBiography);?></biography>
   <reviewCount>0</reviewCount>
-  <commentCount>0</commentCount>
+  <commentCount><?php echo($profileCommentCount);?></commentCount>
   <photosByMeCount>0</photosByMeCount>
   <photosWithMeCount>0</photosWithMeCount>
   <commentsEnabled>true</commentsEnabled>
