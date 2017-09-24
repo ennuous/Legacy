@@ -1,0 +1,2 @@
+ErrorDocument 404 /404.shtml.php
+ErrorDocument 403 /403.shtml.php

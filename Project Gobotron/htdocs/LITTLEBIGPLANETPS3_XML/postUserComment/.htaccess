@@ -1,0 +1,6 @@
+DirectoryIndex index.php
+RewriteEngine On
+RewriteBase /LITTLEBIGPLANETPS3_XML/postUserComment/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ index.php?u=$1 [L,QSA]

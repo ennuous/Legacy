@@ -1,0 +1,5 @@
+<?php
+header('HTTP/1.0 403 Forbidden');
+header('Content-Type: text/plain');
+?>
+403 Forbidden
