@@ -3,4 +3,4 @@ RewriteEngine On
 RewriteBase /LITTLEBIGPLANETPS3_XML/deleteUserComment/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/]+)/?$ index.php?u=$1 [L,QSA]
+RewriteRule ^([^/]+)/?$ index.php?u=$1&$2 [L,QSA]

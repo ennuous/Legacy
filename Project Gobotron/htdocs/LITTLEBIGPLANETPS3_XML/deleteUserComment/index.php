@@ -6,7 +6,7 @@ if($conn->connect_error) {
   require_once('../403.shtml.php');die();
 }
 if(isset($_GET['u'])&&!empty($_GET['u'])){
-  $npHandle = htmlentities($_GET['u'],ENT_QUOTES);
+  $userProfile = htmlentities($_GET['u'],ENT_QUOTES);
 }else{
   require_once('../404.shtml.php');die();
 }
@@ -18,7 +18,7 @@ if(isset($_GET['commentId'])&&!empty($_GET['commentId'])){
 }else{
   require_once('../404.shtml.php');die();
 }
-$sql = "SELECT * `usercomments` WHERE foruser='$npHandle' AND index_id='$commentId' LIMIT 1";
+$sql = "SELECT * FROM `usercomments` WHERE foruser='$userProfile' AND index_id='$commentId' LIMIT 1";
 $result = $conn->query($sql);
 if($result->num_rows > 0){
     while($row = $result->fetch_assoc()){
@@ -38,7 +38,7 @@ $sql = "UPDATE `usercomments`
         SET deleted    ='true',
             deletedBy  ='$authName',
             deletedType='$deletedTypeOf'
-        WHERE foruser='$npHandle' AND index_id ='$commentId'";
+        WHERE foruser='$userProfile' AND index_id ='$commentId'";
 $conn->query($sql);
 $conn->close();
 ?>

@@ -20,6 +20,9 @@ if($result->num_rows > 0){
     $thumbsup     = array();
     $thumbsdown   = array();
     $yourthumb    = array();
+    $deleted      = array();
+    $deletedBy    = array();
+    $deletedType  = array();
     $commentCount = -1;
     while($row = $result->fetch_assoc()){
       array_push($index_id,$row['index_id']);
@@ -29,6 +32,9 @@ if($result->num_rows > 0){
       array_push($thumbsup,$row['thumbsup']);
       array_push($thumbsdown,$row['thumbsdown']);
       array_push($yourthumb,$row['yourthumb']);
+      array_push($deleted,$row['deleted']);
+      array_push($deletedBy,$row['deletedBy']);
+      array_push($deletedType,$row['deletedType']);
       $commentCount = $commentCount + 1;
     }
   }else{
@@ -43,7 +49,13 @@ for ($x = 0; $x <= $commentCount; $x++) {
   echo '    <id>'.$index_id[$x]."</id>\r\n";
   echo '    <npHandle>'.$npHandle[$x]."</npHandle>\r\n";
   echo '    <timestamp>'.$timestamp[$x]."</timestamp>\r\n";
-  echo '    <message>'.$message[$x]."</message>\r\n";
+  if(!$deleted[$x]){
+    echo '    <message>'.$message[$x]."</message>\r\n";
+  }else{
+    echo '    <deleted>'.$deleted[$x]."</deleted>\r\n";
+    echo '    <deletedBy>'.$deletedBy[$x]."</deletedBy>\r\n";
+    echo '    <deletedType>'.$deletedType[$x]."</deletedType>\r\n";
+  }
   echo '    <thumbsup>'.$thumbsup[$x]."</thumbsup>\r\n";
   echo '    <thumbsdown>'.$thumbsdown[$x]."</thumbsdown>\r\n";
   echo '    <yourthumb>'.$yourthumb[$x]."</yourthumb>\r\n";
