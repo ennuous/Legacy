@@ -29,9 +29,10 @@ if(empty($comment)||$comment==''){
 }
 $comment      = htmlentities($comment, ENT_QUOTES);
 $timestampNow = round(microtime(true) * 1000);
-$sql = "INSERT INTO `usercomments` \
-         (`id`, `npHandle`, `timestamp`, `message`, `thumbsup`, `thumbsdown`, `yourthumb`, `index_id`, `foruser`)\
-        VALUES \
+$sql = "INSERT INTO `usercomments` 
+         (`id`, `npHandle`, `timestamp`, `message`, `thumbsup`, `thumbsdown`, `yourthumb`, `index_id`, `foruser`)
+        VALUES 
          (NULL, '$authName', '$timestampNow', '$comment', 0, 0, 0, $nextCommentId, '$forNpHandle')";
 $result = $conn->query($sql);
+$conn->close();
 ?>
